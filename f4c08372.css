@@ -1,0 +1,761 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Alert Bar */
+.alert-bar {
+    background-color: #dc2626;
+    color: white;
+    padding: 8px 16px;
+}
+
+.alert-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.alert-icon {
+    font-size: 18px;
+}
+
+.alert-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.alert-phone {
+    background-color: #facc15;
+    color: black;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.alert-phone:hover {
+    background-color: #eab308;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    color: white;
+    padding: 16px 32px;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    background-color: #facc15;
+    color: black;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.company-address {
+    font-size: 11px;
+    color: #999;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #facc15;
+}
+
+.nav-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.call-btn {
+    background-color: #dc2626;
+    color: white;
+}
+
+.call-btn:hover {
+    background-color: #b91c1c;
+}
+
+.request-btn {
+    background-color: #facc15;
+    color: black;
+}
+
+.request-btn:hover {
+    background-color: #eab308;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.hero-tagline {
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .hero-buttons {
+        flex-direction: row;
+    }
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-white {
+    background-color: white;
+    color: #dc2626;
+}
+
+.btn-white:hover {
+    background-color: #f3f4f6;
+}
+
+.btn-yellow {
+    background-color: #facc15;
+    color: black;
+}
+
+.btn-yellow:hover {
+    background-color: #eab308;
+}
+
+.btn-red {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: #b91c1c;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #dc2626;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #b91c1c;
+}
+
+/* Features Section */
+.features {
+    background-color: #f3f4f6;
+    padding: 48px 16px;
+}
+
+.features-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    text-align: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.feature-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Services Section */
+.services {
+    padding: 64px 16px;
+}
+
+.services-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 48px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 24px;
+    transition: box-shadow 0.3s;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.service-desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.service-link {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.service-link:hover {
+    color: #b91c1c;
+}
+
+/* Brands Section */
+.brands {
+    background-color: #f9fafb;
+    padding: 64px 16px;
+}
+
+.brands-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.brand-item {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: box-shadow 0.3s;
+}
+
+.brand-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Battery Brands Section */
+.battery-brands {
+    padding: 64px 16px;
+}
+
+.battery-brands-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.battery-brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.battery-brand-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.battery-brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.battery-brand-desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.battery-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.battery-type {
+    background-color: black;
+    color: #facc15;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Coverage Section */
+.coverage {
+    background-color: #000;
+    color: white;
+    padding: 64px 16px;
+}
+
+.coverage-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.coverage-subtitle {
+    text-align: center;
+    color: #facc15;
+    margin-bottom: 8px;
+}
+
+.coverage-address {
+    text-align: center;
+    color: #999;
+    margin-bottom: 48px;
+}
+
+.counties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.county-item {
+    background-color: #dc2626;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.county-item:hover {
+    background-color: #b91c1c;
+}
+
+.coverage-call {
+    text-align: center;
+    color: #999;
+    margin-top: 32px;
+}
+
+.coverage-link {
+    color: #facc15;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.coverage-link:hover {
+    color: #eab308;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9fafb;
+    padding: 64px 16px;
+}
+
+.contact-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.info-phone {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.info-email {
+    color: #dc2626;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.info-email:hover {
+    color: #b91c1c;
+}
+
+.info-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.info-link {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.info-link:hover {
+    color: #b91c1c;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 48px 16px;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    background-color: #facc15;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-company {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.footer-company-name {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer-company-address {
+    font-size: 11px;
+    color: #999;
+}
+
+.footer-description {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-text a {
+    color: #facc15;
+    transition: color 0.3s;
+}
+
+.footer-text a:hover {
+    color: #eab308;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 32px;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .alert-content {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-link {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counties-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
